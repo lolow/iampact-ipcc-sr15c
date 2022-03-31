@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+data/SspDb_country_data_2013-06-12.csv
+
+data/iamc15_scenario_data_all_regions_r2_0.csv
+
+sync2zeus.sh

@@ -1,0 +1,45 @@
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[scaled=0.92]{helvet}                       % load Helvetica font
+\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+\newcommand{\degrees}{\ensuremath{^\circ}}
+\begin{document}
+\begin{tikzpicture}
+
+  \node at (2.5,1.5) {\small 2050};
+  
+  \node at (6.5,1.5) {\small 2100};
+  
+  \node at (10.5,1.5) {\small 2100};
+  
+  
+  \node at (0,0) {\small 2\degrees{}C};
+  
+  \node at (2.5,0) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_shr_2050_2C.pdf"}};
+  
+  \node at (6.5,0) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_shr_2100_2C.pdf"}};
+  
+  \node at (10.5,0) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_val_2100_2C.pdf"}};
+  
+  
+  \node at (0,-2.5) {\small 1.5\degrees{}C};
+
+  \node at (2.5,-2.5) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_shr_2050_15C.pdf"}};
+  
+  \node at (6.5,-2.5) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_shr_2100_15C.pdf"}};
+
+  \node at (10.5,-2.5) {\includegraphics[width=4.2cm]{"../zeus/artifacts/plots/map_nben_val_2100_15C.pdf"}};
+  
+  
+  \node at (0,1.6) {\scriptsize{\textbf{a.}}};
+  
+  \node at (8.5,1.6) {\scriptsize{\textbf{b.}}};
+
+
+  \node at (4.5,-4) {\tiny{Proportion of scenarios with positive net benefits}};
+  
+  
+  \node at (10.75,-4) {\tiny{Net benefits}};
+
+\end{tikzpicture}
+\end{document}

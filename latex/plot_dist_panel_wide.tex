@@ -1,0 +1,18 @@
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[scaled=0.92]{helvet}                       % load Helvetica font
+\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+\newcommand{\degrees}{\ensuremath{^\circ}}
+\begin{document}
+\begin{tikzpicture}
+  
+  \node at (-3.7,0) {\includegraphics[height=5.07cm]{"../zeus/artifacts/plots/fig_dist_bhm_all_main_2.png"}};
+
+  \node at (2.5,0) {\includegraphics[height=5cm]{"../zeus/artifacts/plots/plot_nben_boot_ann_bhm_sr_0.png"}};
+  
+  \node at (-6.5,2.7) {\tiny{\textbf{a.}}};
+  
+  \node at (-0.5,2.7) {\tiny{\textbf{b.}}};
+  
+\end{tikzpicture}
+\end{document}

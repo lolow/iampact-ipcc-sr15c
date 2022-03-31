@@ -1,0 +1,33 @@
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[scaled=0.92]{helvet}                       % load Helvetica font
+\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+\newcommand{\degrees}{\ensuremath{^\circ}}
+\begin{document}
+\begin{tikzpicture}
+
+  \node at (0,0) {\includegraphics[height=15cm]{"../zeus/artifacts/plots/plot_all_dr2_all.pdf"}};
+  
+  \node[right] at (7.8,-1.15-2) {Statistics};
+  
+  \draw[thick] (8,-2-2) -- (10.3,-2-2);
+  
+  \node[above] at (8,-2-2) {\small 5\%};
+  \node[above] at (10.3,-2-2) {\small 95\%};
+  
+  \fill[black] (8,-1.97-2) rectangle (10.3,-2.03-2);
+  
+  \fill[black] (18.3/2-0.125,-1.95+0.075-2) rectangle (18.3/2+0.125,-2.05-0.075-2);
+  \fill[white] (18.3/2-0.1,-1.9-2) rectangle (18.3/2+0.1,-2.1-2);
+  \node[above] at (18.3/2,-1.95+0.075-2) {\small 50\%};
+  
+  \node[right] at (7.8,-3+0.3-2) {Parameters' quality};
+  
+  \fill[black] (8,-3.5+0.3-2) rectangle (8.5,-3.6+0.3-2);
+  \node[right] at (8.5,-3.55+0.3-2) {All significant};
+  
+  \fill[black!50] (8,-4+0.3-2) rectangle (8.5,-4.1+0.3-2);
+  \node[right] at (8.5,-4.05+0.3-2) {Not all significant};
+  
+\end{tikzpicture}
+\end{document}

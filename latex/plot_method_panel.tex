@@ -1,0 +1,57 @@
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usetikzlibrary{arrows,positioning} 
+\usepackage[scaled=0.92]{helvet}                       % load Helvetica font
+\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+\newcommand{\degrees}{\ensuremath{^\circ}}
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick,
+           shorten <=2pt,
+           shorten >=2pt,}
+}
+\begin{document}
+\begin{tikzpicture}
+  
+  \node at (4,0.3) {\includegraphics[width=4.2cm]{"../artifacts/plots/fig_method_temp_map.pdf"}};
+  %\fill[blue] (1.95,0.2) rectangle (2.1,0.5);
+  
+  \node at (0,0) {\includegraphics[width=4cm]{"../artifacts/plots/fig_method_temp.pdf"}};
+  
+  \node at (0,-3) {\includegraphics[width=4cm]{"../artifacts/plots/fig_method_lvl_dmg.pdf"}};
+  
+  \node at (4,-3) {\includegraphics[width=4cm]{"../artifacts/plots/fig_method_gwt_dmg.pdf"}};
+
+  \node at (8.2,0) {\includegraphics[width=4cm]{"../artifacts/plots/fig_method_admg.pdf"}};
+
+  \node at (8.2,-3) {\includegraphics[width=4cm]{"../artifacts/plots/fig_method_cmit.pdf"}};
+  
+  \begin{scope}[font=\fontsize{3px}{3px}\selectfont]
+  \node[text=gray] at (6.35,-3.92) {0};
+  \end{scope}
+  
+  \node[right] at (-2,1.5) {\tiny{\textbf{a.} Global mean temperature}};
+  
+  \node[right] at (2.2,1.5) {\tiny{\textbf{b.} Country-level temperature}};
+  
+  \node[right] at (-2,-1.5) {\tiny{\textbf{c.} Level-based damages}};
+  
+  \node[right] at (2.2,-1.5) {\tiny{\textbf{d.} Growth-based damages}};
+
+  \node[right] at (6.4,1.5) {\tiny{\textbf{e.} Avoided damages}};
+  
+  \node[right] at (6.4,-1.5) {\tiny{\textbf{f.} SSP-normalized mitigation costs}};
+  
+  \draw[pil] (1.7,0) -- (2.6,0) node[midway,above] {\tiny{downscaled}};
+  
+  \draw[pil] (0.2,-1.1) -- (0.2,-1.7);
+  
+  \draw[pil] (4.5,-1.1) -- (4.5,-1.7);
+  
+  
+\end{tikzpicture}
+\end{document}

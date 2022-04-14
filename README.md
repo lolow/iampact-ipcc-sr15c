@@ -1,5 +1,7 @@
 # IAMPACT-SR1.5C - Net benefits of the IPCC SR1.5C Scenarios
 
+This is the code used for the analyses and figures of Drouet L., Bosetti V. & Tavoni. M. *Net economic benefits of well-below 2°C scenarios and associated uncertainties* **Oxford Open Climate Change** 2(1), 2022. DOI: https://doi.org/10.1093/oxfclm/kgac003.
+
 This repository is released under the Apache License 2.0; see the
 [LICENSE](LICENSE) for details.
 
